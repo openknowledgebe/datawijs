@@ -117,8 +117,8 @@ h2{
     margin-left: 55px;
   }
   ul{
-    text-align: center;
-    float: left;
+    text-align: left;
+    float: right;
     margin: 0;
     padding: 0;
     margin-top: 15px;
@@ -153,17 +153,12 @@ h2{
   h1.hero-header{
     text-align: left;
     margin-top: 305px;
-    margin-left: 300px;
+    margin-left: 55px;
     z-index: 999;
     color: #FFF;
-    font-size: 2.5em;
+    font-size: 3em;
       text-transform: uppercase;
-    max-width: 800px;
-  }
-
-  img {
-    width: 200px;
-    height: 200px;
+    max-width: 700px;
   }
 }
 
@@ -386,11 +381,12 @@ p.hero-paragraph{
   }
 }
 
-.contact-desc{
+p.contact-desc{
   font-size: 1.3em;
   line-height: 1.4em;
   margin-top: 0;
   padding-top: 0;
+  text-align: left;      
 }
 
 .contact{
@@ -398,29 +394,27 @@ p.hero-paragraph{
     max-width: 90%;
     margin-bottom: 15px;
   }
-  .button-contact{
-
-  }
   h2{
     padding-top: 20px;
   }
   padding-bottom: 35px;
-  .grid-25{
-    text-align: left;
-    a{
-      width: 100%;
-      font-size: 1.2em;
-      font-weight: 500;
-      //background-color: #23998d;
-      background-color: $color-blue;
-      padding: 15px;
-      color: #FFF;
-      border-radius: 10px;
-      position: relative !important;
-      top: 18px !important;
-      text-decoration: none;
-    }
+  .contact-button{
+    text-align: center;
   }
+  a#mailPress{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    display: block;
+    width: 20%;
+    background-color: $color-blue;
+    padding: 15px;
+    color: #FFF;
+    border-radius: 10px;
+    //position: relative !important;
+    top: 18px !important;
+    text-decoration: none;
+    }
 }
 
 .footer{
