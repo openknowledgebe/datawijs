@@ -32,6 +32,10 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.constraint .oSoc-logo img {
+  width: 60px;
+  height: 60px;
+}
 
 .big-participate {
   font-size: 1.3em;
@@ -135,12 +139,16 @@ h2 {
 .hero h1.hero-header {
   text-align: left;
   margin-top: 305px;
-  margin-left: 55px;
+  margin-left: 300px;
   z-index: 999;
   color: #FFF;
-  font-size: 3em;
+  font-size: 2.5em;
   text-transform: uppercase;
-  max-width: 600px;
+  max-width: 800px;
+}
+.hero img {
+  width: 200px;
+  height: 200px;
 }
 
 .video {
@@ -509,7 +517,7 @@ a p {
   }
 
   .nav {
-    background-color: #23998d;
+    background-color: #FFF;
     height: auto;
   }
   .nav img {
