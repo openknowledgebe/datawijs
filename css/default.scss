@@ -3,6 +3,13 @@
 $osoc-green: #229387;
 $osoc-hue: #FFF;
 
+// new colors
+
+$color-green: #7ab800;
+$color-red: #ff0000;
+$color-blue: #00a5e0;
+$color-dark-grey: #2D2D2D;
+
 /* =============================
 * CLEARFIX
 * ============================== */
@@ -24,7 +31,7 @@ $osoc-hue: #FFF;
 * ============================== */
 
 html{
-  font-family: "ff-enzo-web", 'Helvetica Neue';
+  font-family: 'Lato', sans-serif;
   background-color: #444;
 }
 
@@ -36,6 +43,11 @@ a{
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+
+  .oSoc-logo img{
+      width: 60px;
+      height: 60px;
+  }
 }
 
 .big-participate{
@@ -44,7 +56,7 @@ a{
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  background-color: #229387;
+  background-color: $color-green;
   color: #FFF;
   padding: 25px;
   border-radius: 5px;
@@ -95,7 +107,8 @@ h2{
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(35, 153, 141, 0.95);
+  //background-color: rgba(35, 153, 141, 0.95);
+  background-color: #FFF;
   padding: 15px;
   min-height: 50px;
   font-weight: 600;
@@ -104,8 +117,8 @@ h2{
     margin-left: 55px;
   }
   ul{
-    text-align: center;
-    float: left;
+    text-align: left;
+    float: right;
     margin: 0;
     padding: 0;
     margin-top: 15px;
@@ -117,10 +130,10 @@ h2{
       list-style-type: none;
       a{
         text-decoration: none;
-        color: #FFF;
+        color: $color-dark-grey;
       }
       a:hover{
-        color: #EEE;
+        color: $color-blue;
       }
     }
   }
@@ -134,7 +147,7 @@ h2{
   margin-top: -60px;
   padding-top: 50px;
   padding-bottom: 15px;
-  background: url('assets/hero.jpg');
+  background: url('assets/hero.png');
   background-size: cover;
   background-position: center;
   h1.hero-header{
@@ -145,7 +158,7 @@ h2{
     color: #FFF;
     font-size: 3em;
       text-transform: uppercase;
-    max-width: 600px;
+    max-width: 700px;
   }
 }
 
@@ -258,7 +271,7 @@ p.hero-paragraph{
 	padding-top: 10px;
 	padding-bottom: 25px;
   }
-  .grid-33{
+  .grid-25{
 	border-right: 1px solid #444;
 	img{
 	  width: 50%;
@@ -268,13 +281,14 @@ p.hero-paragraph{
 	}
 	margin-bottom: 25px;
   }
-  .grid-33:last-of-type{
+  .grid-25:last-of-type{
 	border-right: none;
   }
   display: block;
   color: #FFF;
   text-align: center;
-  background-color: #333;
+  //background-color: #333;
+  background-color: $color-dark-grey;
   .number-container{
     background-color: #333;
     height: 135px;
@@ -305,12 +319,34 @@ p.hero-paragraph{
   padding-bottom: 25px;
   h2{
     margin-top: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   .students-gallery{
     .grid-25{
+      margin-bottom: 35px;
       p{
         text-align: center;
+      }
+      .student-name{
+        font-size: 1.3em;
+        margin-bottom: 0px;
+      }
+      .student-twitter{
+        font-size: 1.2em;
+        padding-bottom: 10px;
+        a{
+          text-decoration: none;
+          color: #AAAAAA;
+        }
+      }
+      .student-linkedin{
+        a{
+           background-color: #23998d;
+          padding: 5px;
+          color: #FFF;
+          font-size: 0.9em;
+          text-decoration: none;
+        }
       }
       img.round{
         display: block !important;
@@ -345,11 +381,12 @@ p.hero-paragraph{
   }
 }
 
-.contact-desc{
+p.contact-desc{
   font-size: 1.3em;
   line-height: 1.4em;
   margin-top: 0;
   padding-top: 0;
+  text-align: left;      
 }
 
 .contact{
@@ -357,47 +394,57 @@ p.hero-paragraph{
     max-width: 90%;
     margin-bottom: 15px;
   }
-  .button-contact{
-
-  }
   h2{
     padding-top: 20px;
   }
   padding-bottom: 35px;
-  .grid-25{
-    text-align: left;
-    a{
-      width: 100%;
-      font-size: 1.2em;
-      font-weight: 500;
-      background-color: #23998d;
-      padding: 15px;
-      color: #FFF;
-      border-radius: 10px;
-      position: relative !important;
-      top: 18px !important;
-      text-decoration: none;
-    }
+  .contact-button{
+    text-align: center;
   }
+  a#mailPress{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    display: block;
+    width: 20%;
+    background-color: $color-blue;
+    padding: 15px;
+    color: #FFF;
+    border-radius: 10px;
+    //position: relative !important;
+    top: 18px !important;
+    text-decoration: none;
+    }
 }
 
 .footer{
-  background-color: #333;
+  border-top: 5px solid $color-green; 
+  background-color: #FFF;
   padding-bottom: 1px;
   p{
     font-size: 0.9em;
     padding-top: 5px;
-    color: #FFF;
+    color: $color-dark-grey;
   }
   a{
-    color: #BBB;
+    color: $color-dark-grey;
   }
 }
 
 .contact-buttons .grid-25{
   height: 100%;
-  .contact-button{
-    width: 75%;
+  .contact-person{
+    //width: 75%;
+    //background-color: $color-dark-grey;
+    color: $color-red;
+    width: 100%;
+    font-size: 2.0em;
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative !important;
+    top: 18px !important;
+    text-decoration: none;
   }
 }
 
@@ -493,7 +540,7 @@ a{
     }
   }
 .nav{
-  background-color: rgba(35, 153, 141, 1);
+  background-color: #FFF;
   height: auto;
   img{
     margin: 0;
