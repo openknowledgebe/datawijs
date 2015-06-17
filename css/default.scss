@@ -35,7 +35,7 @@ $color-white: #FFF;
 * ============================== */
 
 html{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: $color-dark-grey;
 }
 
@@ -47,16 +47,81 @@ a{
   color: $color-blue;
 }
 
+.videowrapper {
+  padding-bottom: 42%;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  iframe {
+    width: 100%!important;
+    height: 100%!important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.faq {
+  padding: 4em 0;
+}
+
+.container{
+  padding: 1em;
+  margin: 0 5%;
+}
+
+.newspaper {
+  h3 {
+    margin-top: 0;
+    color: #EE3A24;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container{
+    padding: 1em;
+    margin: 0 5%;
+  }
+  .newspaper {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 4em;
+    -moz-column-gap: 4em;
+    column-gap: 4em;
+    -webkit-column-rule: 1px solid #EE3A24;
+    -moz-column-rule: 1px solid #EE3A24;
+    column-rule: 1px solid #EE3A24;
+    &>div {
+      -webkit-column-break-inside: avoid;
+      break-inside: avoid-column;
+    }
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .container{
+    padding: 1em;
+    margin: 0 5%;
+  }
+  .newspaper {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+
 .constraint{
 
   max-width: 1060px;
   margin-left: auto;
   margin-right: auto;
 
-  .oSoc-logo img{
-      width: 60px;
-      height: 60px;
-  }
+}
+.oSoc-logo img{
+    width: 60px;
+    height: 60px;
 }
 
 .big-participate{
@@ -129,14 +194,15 @@ p.big{
   margin-right: auto;
 }
 
-h1, h2, h3{
+h1, h2{
   text-align: center;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h2{
   font-size: 2.5em;
+  color: #65CCEC;
 }
 
 .wh{
@@ -219,30 +285,6 @@ h2{
   }
 }
 
-.video{
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: $color-white;
-
-  .videowrapper{
-    position: relative;
-    padding-bottom: 53.55%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
-  }
-
-  .player .video-wrapper{
-    background: $color-white !important;
-  }
-
-  iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
 
 .location{
   padding-bottom: 45px;
@@ -457,20 +499,11 @@ p.hero-paragraph{
 }
 
 .faq {
-  #faqs{
     h2{
       padding-top: 0;
     }
 
     h3{
-      cursor: pointer;
-      cursor: hand;
-      margin-top: 0;
-      padding: 0 1em;
-
-      &:first-of-type {
-        margin-top: 1em;
-      }
 
       .toggle-icon {
         margin-left: .5em;
@@ -481,15 +514,14 @@ p.hero-paragraph{
     .faq-answer{
       padding: 0 1em 2.5em 1em;
       display: block;
-      line-height: 2;
+      line-height: 1.5em;
       color: $color-light-grey;
     }
-  }
 }
 
-.participate{
+.partners{
   color: $color-white;
-  background: url('assets/hero-students2B.jpg');
+  background: #eee ;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
