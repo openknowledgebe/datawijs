@@ -5,8 +5,8 @@ $osoc-hue: #FFF;
 
 // new colors
 
-$color-green: #7ab800;
-$color-red: #ff3333;
+$color-green: #7FB924;
+$color-red: #EE3A24;
 $color-blue: #00a5e0;
 $color-dark-grey: #2D2D2D;
 $color-light-grey: lighten($color-dark-grey, 15%);
@@ -62,15 +62,18 @@ a{
   }
 }
 
-.faq {
-  padding: 4em 0;
-}
-
-.container{
-  padding: 1em;
+// Fluid container
+.container {
+  padding: 0 1em;
   margin: 0 5%;
 }
 
+// Header
+.header {
+  background: $color-red;
+}
+
+// Responsive columns
 .newspaper {
   h3 {
     margin-top: 0;
@@ -79,10 +82,6 @@ a{
 }
 
 @media screen and (min-width: 768px) {
-  .container{
-    padding: 1em;
-    margin: 0 5%;
-  }
   .newspaper {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -101,14 +100,92 @@ a{
 }
 
 @media screen and (min-width: 1140px) {
-  .container{
-    padding: 1em;
-    margin: 0 5%;
-  }
   .newspaper {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
+  }
+}
+
+// Grid for partner logos
+.grid {
+  padding: 0;
+  margin: 0 -1em;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &>li{
+    width: 300px;
+    max-width: 100%;
+  }
+}
+/* =============================
+* CONTENT SPECIFIC STYLES
+* ============================== */
+
+.logo {
+  display: inline-block;
+  margin-left: -1em;
+  background: #000;
+  width: 100px;
+  height: 100px;
+  a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: $color-red url(../images/logo-datawijs.png);
+    background-size: cover;
+    font-size: 0;
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
+
+.faq {
+  margin: 1em 0;
+  padding: 1em 0;
+}
+
+.partners {
+  padding: 1em 0 4em;
+  a {
+    display: block;
+    transition: -webkit-filter .3s, filter .3s;
+    -moz-filter: saturate(0);
+    -webkit-filter: saturate(0);
+    -o-filter: saturate(0);
+    -ms-filter: saturate(0);
+    filter: saturate(0);
+    padding: 1em;
+    &:hover, &:focus {
+      -moz-filter: saturate(1);
+      -webkit-filter: saturate(1);
+      -o-filter: saturate(1);
+      -ms-filter: saturate(1);
+      filter: saturate(1);
+    }
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 150, 0, .5);
+    color: #fff;
+  }
+  .sponsor {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    max-height: 100px;
+    margin-bottom: 25px;
+    opacity: 0.85;
+    max-width: 200px;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -210,39 +287,31 @@ h2{
 }
 
 .nav{
-  z-index: 999;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: $color-white;
-  padding: 15px;
-  min-height: 50px;
-  font-weight: 600;
-
-  img{
-    float: left;
-    margin-left: 55px;
-  }
+  min-height: 100px;
+  color: #fff;
 
   ul{
-    text-align: center;
-    float: left;
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    margin-top: 15px;
-    margin-left: 75px;
+    min-height: 100px;
+    align-items:center;
+    align-content:center;
+    justify-content:flex-end;
+    display: flex;
+    flex-wrap:wrap;
     li{
       text-transform: uppercase;
-      float: left;
-      margin-right: 40px;
-      list-style-type: none;
+      display: inline-block;
       a{
+        display: block;
         text-decoration: none;
-        color: $color-dark-grey;
+        color: $color-white;
+        line-height: 20px;
+        padding:15px 20px;
       }
       a:hover{
-        color: $color-green;
+        background: rgba(0,0,0,.1);
       }
 
       .active {
@@ -299,11 +368,6 @@ h2{
     margin: 0;
     padding: 0;
     position: relative;
-    padding-bottom: 25px;
-  }
-  h2{
-    margin: 0;
-    padding-top: 40px;
     padding-bottom: 25px;
   }
   .map{
@@ -498,57 +562,6 @@ p.hero-paragraph{
   }
 }
 
-.faq {
-    h2{
-      padding-top: 0;
-    }
-
-    h3{
-
-      .toggle-icon {
-        margin-left: .5em;
-        transition: all 0.4s;
-        color: $color-super-light-grey;
-      }
-    }
-    .faq-answer{
-      padding: 0 1em 2.5em 1em;
-      display: block;
-      line-height: 1.5em;
-      color: $color-light-grey;
-    }
-}
-
-.partners{
-  color: $color-white;
-  background: #eee ;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  h2{
-    color: $color-white;
-    margin-top: 0px;
-    padding-top: 40px;
-    padding-bottom: 20px;
-  }
-
-  .sponsor{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
-    max-height: 100px;
-    margin-bottom: 25px;
-    opacity: 0.85 ;
-    max-width: 200px;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-}
-
 .contact-desc{
   font-size: 1.3em;
   line-height: 1.4em;
@@ -557,15 +570,16 @@ p.hero-paragraph{
 }
 
 .footer{
-  background-color: $color-dark-grey;
-  padding-bottom: 1px;
+  background-color: $color-red;
+  padding-bottom: 1em;
+  text-align: center;
   p{
     font-size: 0.9em;
     padding-top: 5px;
     color: $color-white;
   }
   a{
-    color: #BBB;
+    color: #fff;
   }
 }
 
@@ -638,34 +652,6 @@ a{
     }
   }
 
-  .nav{
-    height: auto;
-    img{
-      margin: 0;
-      margin-top: 3px;
-      display: block;
-      text-align: center;
-      clear: both;
-    }
-    ul{
-      margin-left: 5px;
-      top: -7px;
-      float: none;
-      margin-top: -3px;
-      line-height: 3.0em;
-      li{
-        float: none;
-        font-size: 0.9em;
-        display: inline;
-        margin: 0;
-        margin-left: 5px;
-        a{
-          padding: 10px 10px;
-        }
-      }
-    }
-  }
-
   .numbers {
     .grid-25 {
       border-right: 1px solid #444;
@@ -681,55 +667,3 @@ a{
     }
   }
 }
-
-
-@media screen and (max-width: 769px){
-
-  .footer{
-    p{
-      text-align: left;
-    }
-  }
-
-  .nav {
-    position: relative !important;
-    width: auto !important;
-
-    .oSoc-logo{
-      display: inline-block;
-      width: 100% !important;
-      a{
-        display: block;
-        width: 63px;
-        margin-left: 0 !important;
-        margin-right: auto !important;
-      }
-      img{
-        display: block;
-        text-align: center;
-        margin-left: 0 !important;
-        margin-right: auto !important;
-        padding-bottom: 0px !important;
-      }
-    }
-
-    .nav-toggle {
-      margin-top: 8px;
-      display: block;
-
-      &:hover {
-        cursor: pointer;
-        cursor: hand;
-      }
-    }
-
-    ul {
-      display: none;
-    }
-  }
-}
-
-html{
-  padding: 0 !important;
-}
-

@@ -38,21 +38,18 @@ a {
     top: 0;
     left: 0; }
 
-.faq {
-  padding: 4em 0; }
-
 .container {
-  padding: 1em;
+  padding: 0 1em;
   margin: 0 5%; }
+
+.header {
+  background: #EE3A24; }
 
 .newspaper h3 {
   margin-top: 0;
   color: #EE3A24; }
 
 @media screen and (min-width: 768px) {
-  .container {
-    padding: 1em;
-    margin: 0 5%; }
   .newspaper {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -68,13 +65,79 @@ a {
       break-inside: avoid-column; } }
 
 @media screen and (min-width: 1140px) {
-  .container {
-    padding: 1em;
-    margin: 0 5%; }
   .newspaper {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3; } }
+
+.grid {
+  padding: 0;
+  margin: 0 -1em;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .grid > li {
+    width: 300px;
+    max-width: 100%; }
+
+/* =============================
+* CONTENT SPECIFIC STYLES
+* ============================== */
+.logo {
+  display: inline-block;
+  margin-left: -1em;
+  background: #000;
+  width: 100px;
+  height: 100px; }
+  .logo a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: #EE3A24 url(../images/logo-datawijs.png);
+    background-size: cover;
+    font-size: 0; }
+    .logo a:hover {
+      opacity: .8; }
+
+.faq {
+  margin: 1em 0;
+  padding: 1em 0; }
+
+.partners {
+  padding: 1em 0 4em; }
+  .partners a {
+    display: block;
+    transition: -webkit-filter 0.3s, filter 0.3s;
+    -moz-filter: saturate(0);
+    -webkit-filter: saturate(0);
+    -o-filter: saturate(0);
+    -ms-filter: saturate(0);
+    filter: saturate(0);
+    padding: 1em; }
+    .partners a:hover, .partners a:focus {
+      -moz-filter: saturate(1);
+      -webkit-filter: saturate(1);
+      -o-filter: saturate(1);
+      -ms-filter: saturate(1);
+      filter: saturate(1); }
+  .partners img {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 150, 0, 0.5);
+    color: #fff; }
+  .partners .sponsor {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    max-height: 100px;
+    margin-bottom: 25px;
+    opacity: 0.85;
+    max-width: 200px; }
+    .partners .sponsor:hover {
+      opacity: 1; }
 
 .constraint {
   max-width: 1060px;
@@ -100,7 +163,7 @@ a {
   float: left; }
   .big-participate:hover {
     background-color: #2D2D2D;
-    color: #7ab800; }
+    color: #7FB924; }
 
 .big-notice {
   font-size: 1.3em;
@@ -152,37 +215,31 @@ h2 {
   color: #FFF; }
 
 .nav {
-  z-index: 999;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: #FFF;
-  padding: 15px;
-  min-height: 50px;
-  font-weight: 600; }
-  .nav img {
-    float: left;
-    margin-left: 55px; }
+  min-height: 100px;
+  color: #fff; }
   .nav ul {
-    text-align: center;
-    float: left;
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    margin-top: 15px;
-    margin-left: 75px; }
+    min-height: 100px;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap; }
     .nav ul li {
       text-transform: uppercase;
-      float: left;
-      margin-right: 40px;
-      list-style-type: none; }
+      display: inline-block; }
       .nav ul li a {
+        display: block;
         text-decoration: none;
-        color: #2D2D2D; }
+        color: #FFF;
+        line-height: 20px;
+        padding: 15px 20px; }
       .nav ul li a:hover {
-        color: #7ab800; }
+        background: rgba(0, 0, 0, 0.1); }
       .nav ul li .active {
-        color: #7ab800;
+        color: #7FB924;
         transition: color 0.2s ease-in-out; }
   .nav .nav-toggle {
     display: none; }
@@ -222,10 +279,6 @@ h2 {
     margin: 0;
     padding: 0;
     position: relative;
-    padding-bottom: 25px; }
-  .location h2 {
-    margin: 0;
-    padding-top: 40px;
     padding-bottom: 25px; }
   .location .map {
     width: 550px;
@@ -312,7 +365,7 @@ p.hero-paragraph {
       padding: 15px; }
       .studentsparticipate .skill-container .skill-item .skill {
         top: -30px;
-        color: #7ab800;
+        color: #7FB924;
         max-width: 700px;
         display: block;
         margin-left: auto;
@@ -365,43 +418,6 @@ p.hero-paragraph {
       height: 120px;
       border-radius: 300px; }
 
-.faq h2 {
-  padding-top: 0; }
-
-.faq h3 .toggle-icon {
-  margin-left: .5em;
-  transition: all 0.4s;
-  color: #adadad; }
-
-.faq .faq-answer {
-  padding: 0 1em 2.5em 1em;
-  display: block;
-  line-height: 1.5em;
-  color: #535353; }
-
-.partners {
-  color: #FFF;
-  background: #eee;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }
-  .partners h2 {
-    color: #FFF;
-    margin-top: 0px;
-    padding-top: 40px;
-    padding-bottom: 20px; }
-  .partners .sponsor {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
-    max-height: 100px;
-    margin-bottom: 25px;
-    opacity: 0.85;
-    max-width: 200px; }
-    .partners .sponsor:hover {
-      opacity: 1; }
-
 .contact-desc {
   font-size: 1.3em;
   line-height: 1.4em;
@@ -409,14 +425,15 @@ p.hero-paragraph {
   padding-top: 0; }
 
 .footer {
-  background-color: #2D2D2D;
-  padding-bottom: 1px; }
+  background-color: #EE3A24;
+  padding-bottom: 1em;
+  text-align: center; }
   .footer p {
     font-size: 0.9em;
     padding-top: 5px;
     color: #FFF; }
   .footer a {
-    color: #BBB; }
+    color: #fff; }
 
 /* =============================
 * MEDIA QUERIES
@@ -464,28 +481,6 @@ a p {
     max-width: 80% !important; }
     .map img {
       width: 100% !important; }
-  .nav {
-    height: auto; }
-    .nav img {
-      margin: 0;
-      margin-top: 3px;
-      display: block;
-      text-align: center;
-      clear: both; }
-    .nav ul {
-      margin-left: 5px;
-      top: -7px;
-      float: none;
-      margin-top: -3px;
-      line-height: 3.0em; }
-      .nav ul li {
-        float: none;
-        font-size: 0.9em;
-        display: inline;
-        margin: 0;
-        margin-left: 5px; }
-        .nav ul li a {
-          padding: 10px 10px; }
   .numbers .grid-25 {
     border-right: 1px solid #444;
     margin-bottom: 25px; }
@@ -494,35 +489,3 @@ a p {
       max-width: 130px; }
   .numbers .grid-25:nth-of-type(2n) {
     border-right: none; } }
-
-@media screen and (max-width: 769px) {
-  .footer p {
-    text-align: left; }
-  .nav {
-    position: relative !important;
-    width: auto !important; }
-    .nav .oSoc-logo {
-      display: inline-block;
-      width: 100% !important; }
-      .nav .oSoc-logo a {
-        display: block;
-        width: 63px;
-        margin-left: 0 !important;
-        margin-right: auto !important; }
-      .nav .oSoc-logo img {
-        display: block;
-        text-align: center;
-        margin-left: 0 !important;
-        margin-right: auto !important;
-        padding-bottom: 0px !important; }
-    .nav .nav-toggle {
-      margin-top: 8px;
-      display: block; }
-      .nav .nav-toggle:hover {
-        cursor: pointer;
-        cursor: hand; }
-    .nav ul {
-      display: none; } }
-
-html {
-  padding: 0 !important; }

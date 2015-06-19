@@ -1,192 +1,161 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Datawijs</title>
-    <meta name="description" content="Datawijs is een interactief videoplatform dat jongeren van 15 tot 25 jaar Open Data laat ontdekken.">
-    <meta name="author" content="Datawijs team, Open Knowledge Belgium">
-    <meta name="viewport" content="width=device-width">
-    <meta property="og:title" content="Datawijs" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://datawijs.be" />
-    <meta property="og:image" content="http://datawijs.be/images/logo.png" />
-    <meta property="og:description" content="Datawijs is een interactief videoplatform dat jongeren van 15 tot 25 jaar Open Data laat ontdekken." />
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@OpenKnowledgeBE">
-    <meta name="twitter:title" content="Datawijs">
-    <meta name="twitter:description" content="Datawijs is een interactief videoplatform dat jongeren van 15 tot 25 jaar Open Data laat ontdekken.">
-    <meta name="twitter:image" content="http://datawijs.be/images/logo.png" />
-    <meta name="twitter:url" content="http://datawijs.be/" />
-    <link rel="stylesheet" href="css/index.css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:600,400" rel="stylesheet" type="text/css">
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <!-- FAVICONS -->
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="images/favicon/favicon-194x194.png" sizes="194x194">
-    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="images/favicon/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="images/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="‪#FFFFFF">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="‪#FFFFFF">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Datawijs</title>
+	<meta name="description" content="Datawijs is een interactief videoplatform dat jongeren van 15 tot 25 jaar Open Data laat ontdekken.">
+	<meta name="author" content="Datawijs team, Open Knowledge Belgium">
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:title" content="Datawijs" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://datawijs.be" />
+	<meta property="og:image" content="http://datawijs.be/images/logo.png" />
+	<meta property="og:description" content="Datawijs is een interactief videoplatform dat jongeren van 15 tot 25 jaar Open Data laat ontdekken." />
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@OpenKnowledgeBE">
+	<meta name="twitter:title" content="Datawijs">
+	<meta name="twitter:description" content="Datawijs is een interactief videoplatform dat jongeren van 15 tot 25 jaar Open Data laat ontdekken.">
+	<meta name="twitter:image" content="http://datawijs.be/images/logo.png" />
+	<meta name="twitter:url" content="http://datawijs.be/" />
+	<link rel="stylesheet" href="css/index.css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:600,400" rel="stylesheet" type="text/css">
+	<script src="bower_components/modernizr/modernizr.js"></script>
+	<!-- FAVICONS -->
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="images/favicon/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="‪#FFFFFF">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="‪#FFFFFF">
 </head>
+
 <body>
-<div class="page">
-    <header>
-        <nav class="nav" role="navigation">
-            <div class="oSoc-logo">
-                <a href="#" class="scrollTop"><img src="images/squarelogo-LI.png" alt="Logo oSoc15"></a>
-                <i class="fa fa-bars fa-3x nav-toggle pull-right"></i>
-            </div>
-            <ul class="ul-nav">
-                <li><a href="#participate" data-target="participate" class="scroll">Partners</a></li>
-                <li><a href="#faq" data-target="faq" class="scroll">FAQ</a></li>
-            </ul>
-        </nav>
-    </header>
+	<div class="page">
+		<header class="header">
+			<nav class="nav container" role="navigation">
+				<span class="logo pull-left">
+					<a href="#" class="scrollTop">Datawijs.be</a>
+				</span>
+				<ul>
+					<li><a href="#partners" data-target="partners" class="scroll">Partners</a></li>
+					<li><a href="#FAQ" data-target="FAQ" class="scroll">FAQ</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="videowrapper" id="video">
+				<iframe id="vimeoplayer" src="https://player.vimeo.com/video/125381627?api=1&player_id=vimeoplayer&title=0&byline=0&portrait=0&color=ffffff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+			<article class="faq" id="FAQ">
+				<div class="container">
+					<h2>FAQ</h2>
+					<div class="newspaper">
+						<div>
+							<h3>Wat is Datawijs?</h3>
+							<p>
+								Datawijs is een interactief videoplatform dat gebruik maakt van Klynt. Het wil jongeren wegwijs maken in Open Data, door hen te informeren maar hen ook zelf met Open Data aan de slag te laten gaan.
+							</p>
+						</div>
+						<div>
+							<h3>Wat is Open Data?</h3>
+							<p>
+								Wel, dat kan je ontdekken in onze filmpjes!
+							</p>
+						</div>
+						<div>
+							<h3>Hoe werkt Datawijs?</h3>
+							<p>
+								Datawijs is een interactief videoplatform, dat wil zeggen dat je zelf kiest in welke volgorde je de filmpjes kijkt. Je hoeft ze ook niet allemaal te bekijken. Enkele videos bevatten ook opdrachten. Bovendien kan je altijd op de links in de filmpjes klikken, als je meer informatie over iets wil.
+							</p>
+						</div>
+						<div>
+							<h3>Mag ik Datawijs gebruiken, ook al ben ik jonger dan 15/ouder dan 25 jaar?</h3>
+							<p>
+								Hoewel onze doelgroep jongeren zijn, mag iedereen Datawijs gebruiken. Graag zelfs!
+							</p>
+						</div>
+						<div>
+							<h3>Wie heeft Datawijs ontworpen? </h3>
+							<p>
+								Datawijs is initiatief van Open Knowledge Belgium vzw en Mediaraven vzw.
+							</p>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="partners" id="partners">
+				<div class="container">
+					<h2>Partners</h2>
+					<ul class="grid">
+						<li>
+							<a href="http://www.openknowledge.be/" title="Open Knowledge Belgium" target="_blank"><img src="images/logo-openknowledgebe.png" alt="Open Knowledge Belgium"></a>
+						</li>
+						<li>
+							<a href="" title="" target="_blank"><img src="" alt="Partner logo"></a>
+						</li>
+						<li>
+							<a href="" title="" target="_blank"><img src="" alt="Partner logo"></a>
+						</li>
+						<li>
+							<a href="" title="" target="_blank"><img src="" alt="Partner logo"></a>
+						</li>
+					</ul>
+				</div>
+			</article>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<p>
+					<span class="logo">
+						<a href="#" class="scrollTop">Datawijs.be</a>
+					</span>
+				</p>
+				<p>
+					Powered by Open Knowledge Belgium. Source code freely available on
+					<a href="https://github.com/openknowledgebe/datawijs">GitHub</a>.
+				</p>
+				<p>
+					Developed by
+					<a href="https://twitter.com/brechtvdv">@brechtvdv</a>,
+					<a href="https://twitter.com/nicoverbruggen">@nicoverbruggen</a>,
+					<a href="https://twitter.com/yungpanda_be">@yungpanda_be</a> and
+					<a href="https://twitter.com/sandmeert">@sandmeert</a>.
+				</p>
+			</div>
+		</footer>
+	</div>
+	<script>
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    <main>
-    <div class="videowrapper" id="video">
-        <iframe id="vimeoplayer" src="https://player.vimeo.com/video/125381627?api=1&player_id=vimeoplayer&title=0&byline=0&portrait=0&color=ffffff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-
-<div class="faq container" id="FAQ">
-  <h2>FAQ</h2>
-  <div class="newspaper">
-    <h3>Wat is Datawijs?</h3>
-    <div>
-      <p>
-        Datawijs is een interactief videoplatform dat gebruik maakt van Klynt. Het wil jongeren wegwijs maken in Open Data, door hen te informeren maar hen ook zelf met Open Data aan de slag te laten gaan.
-      </p>
-    </div>
-    <div>
-      <h3>Wat is Open Data?</h3>
-      <p>
-        Wel, dat kan je ontdekken in onze filmpjes!
-      </p>
-    </div>
-    <div>
-      <h3>Hoe werkt Datawijs?</h3>
-      <p>
-        Datawijs is een interactief videoplatform, dat wil zeggen dat je zelf kiest in welke volgorde je de filmpjes kijkt. Je hoeft ze ook niet allemaal te bekijken. Enkele videos bevatten ook opdrachten. Bovendien kan je altijd op de links in de filmpjes klikken, als je meer informatie over iets wil.
-      </p>
-    </div>
-    <div>
-      <h3>Mag ik Datawijs gebruiken, ook al ben ik jonger dan 15/ouder dan 25 jaar?</h3>
-      <p>
-        Hoewel onze doelgroep jongeren zijn, mag iedereen Datawijs gebruiken. Graag zelfs!
-      </p>
-    </div>
-    <div>
-      <h3>Wie heeft Datawijs ontworpen? </h3>
-      <p>
-        Datawijs is initiatief van Open Knowledge Belgium vzw en Mediaraven vzw.
-      </p>
-    </div>
-  </div>
-</div>
-
-
-
-    <div class="partners" id="partners">
-        <div class="constraint">
-            <h2>Event Partners</h2>
-            <div class="partners-gallery grid-container">
-                <div class="grid-25 mobile-grid-100">
-                    <a href="http://www.cordacampus.com/en/corda-incubator/welcome" title="Corda Incubator" target="_blank"><img class="sponsor" src="images/sponsors/cordainc.png"></a>
-                </div>
-                <div class="grid-25 mobile-grid-100">
-                    <a href="http://www.trakk.be/" title="Trakk" target="_blank"><img class="sponsor" src="images/sponsors/trakk.png"></a>
-                </div>
-                <div class="grid-25 mobile-grid-100">
-                    <a href="http://www.digipolis.be/" title="Digipolis" target="_blank"><img class="sponsor" src="images/sponsors/digipolis.png"></a>
-                </div>
-                <div class="grid-25 mobile-grid-100">
-                    <a href="http://www.tones.be/" title="Tones" target="_blank"><img class="sponsor" src="images/sponsors/tones.png"></a>
-                </div>
-                <div class="grid-25 mobile-grid-100">
-                    <a href="http://www.startit.be/" title="StartIt KBC" target="_blank"><img class="sponsor" src="images/sponsors/startitkbc.png"></a>
-                </div>
-            </div>
-            <h2>Project Partners</h2>
-            <div class="partners-gallery grid-container">
-                <div class="grid-25 mobile-grid-100">
-                    <a href="http://www.be-mobile-international.com/" title="Be-Mobile" target="_blank"><img class="sponsor" src="images/sponsors/pro_bemobile2.png"></a>
-                </div>
-                <div class="grid-25 mobile-grid-100">
-                    <a href="http://www.bibnet.be/" title="Bibnet" target="_blank"><img class="sponsor" src="images/sponsors/pro_bibnet2.png"></a>
-                </div>
-                <div class="grid-25 mobile-grid-100">
-                    <a href="http://www.vlaanderen.be/nl" title="Vlaanderen" target="_blank"><img class="sponsor" src="images/sponsors/pro_flanders.png"></a>
-                </div>
-                <div class="grid-25 mobile-grid-100">
-                    <a href="http://www.iminds.be/" title="iMinds" target="_blank"><img class="sponsor" src="images/sponsors/pro_iminds.png"></a>
-                </div>
-            </div>
-            <div class="partners-gallery grid-container">
-                <div class="grid-25 mobile-grid-100">
-                    <a href="http://irail.be" title="iRail" target="_blank"><img class="sponsor" src="images/sponsors/pro_irail.png"></a>
-                </div>
-                <div class="grid-25 mobile-grid-100">
-                    <a href="http://www.leiedal.be/" title="Leiedal" target="_blank"><img class="sponsor" src="images/sponsors/pro_leiedal.png"></a>
-                </div>
-                <div class="grid-25 mobile-grid-100">
-                    <a href="http://stad.gent/" title="Stad Gent" target="_blank"><img class="sponsor" src="images/sponsors/pro_stadgent.png"></a>
-                </div>
-                <div class="grid-25 mobile-grid-100">
-                    <a href="http://www.inbo.be/" title="Inbo" target="_blank"><img class="sponsor" src="images/sponsors/pro_inbo.png"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </main>
-
-    <footer class="footer">
-        <div class="constraint">
-            <div class="grid-container">
-                <div class="grid-50">
-                    <p>Powered by Open Knowledge Belgium.
-                        Source code freely available on
-                        <a href="https://github.com/openknowledgebe/datawijs">GitHub</a>.
-                    </p>
-                </div>
-                <div class="grid-50">
-                    <p class="al-r">Developed by
-                        <a href="https://twitter.com/brechtvdv">@brechtvdv</a>
-                        ,
-                        <a href="https://twitter.com/nicoverbruggen">@nicoverbruggen</a>
-                        ,
-                        <a href="https://twitter.com/yungpanda_be">@yungpanda_be</a> and
-                        <a href="https://twitter.com/sandmeert">@sandmeert</a>.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-</div>
-    
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', '', 'datawijs.be');
-    ga('send', 'pageview');
-</script>
-<script src="js/main.js"></script>
+	ga('create', '', 'datawijs.be');
+	ga('send', 'pageview');
+	</script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
+
 </html>
