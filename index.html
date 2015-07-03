@@ -41,6 +41,10 @@
 	<meta name="msapplication-TileColor" content="‪#FFFFFF">
 	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 	<meta name="theme-color" content="‪#FFFFFF">
+
+	<script type="text/javascript" src="Player/js/libs/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="Player/js/libs/lazyload.js"></script>
+    <script type="text/javascript" src="Player/js/klynt.js"></script>
 </head>
 
 <body>
@@ -57,8 +61,8 @@
 			</nav>
 		</header>
 		<main>
-			<div class="videowrapper" id="video">
-				<iframe id="vimeoplayer" src="https://player.vimeo.com/video/125381627?api=1&player_id=vimeoplayer&title=0&byline=0&portrait=0&color=ffffff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<div id="player-container" class="player-container">
+        <div id="player" class="player"></div>
 			</div>
 			<article class="faq" id="FAQ">
 				<div class="container">
