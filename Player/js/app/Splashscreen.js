@@ -45,7 +45,8 @@
 		'Player/js/libs/mediaelement/mediaelement-and-player.js',
 		'Player/js/libs/timesheets.js',
 		'Player/js/libs/jquery.autoellipsis.js',
-		'Player/js/libs/sigmajs/sigma.min.js'
+		'Player/js/libs/sigmajs/sigma.min.js',
+		'Player/js/libs/jquery.mousewheel.min.js'
 	];
 
 	var playerJSFiles = [

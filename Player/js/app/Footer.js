@@ -131,7 +131,7 @@
 
         itemsWidth = 0;
         $items.each(function () {
-            itemsWidth += $(this).width() + $(this).outerWidth();
+            itemsWidth += $(this).outerWidth(true);
         });
         buttonsWidth = $('.footer-buttons').width();
         breakPoint1 = itemsWidth + buttonsWidth + 15 + 30;
@@ -142,7 +142,7 @@
 
         itemsWidth = 0;
         $items.each(function () {
-            itemsWidth += $(this).width() + $(this).outerWidth();
+            itemsWidth += $(this).outerWidth(true);
         });
         buttonsWidth = $('.footer-buttons').width();
         breakPoint2 = itemsWidth + buttonsWidth + 15 + 30;
@@ -152,46 +152,27 @@
 
         $(window).on('resize', function () {
             changeFooter(breakPoint1, breakPoint2);
-        })
-    }
-
-    function firstBreakPoint() {
-        var buttonsWidth, itemsWidth = 0;
-
-        $items.each(function () {
-            itemsWidth += $(this).width() + $(this).outerWidth();
         });
-
-        buttonsWidth = $('.footer-buttons').width();
-
-        return itemsWidth + buttonsWidth + 15 + 30;
     }
 
     function changeFooter(breakPoint1, breakPoint2) {
-
         var footerWidth = $element.width();
         var mobileButton = $('.footer-mobile-button');
 
-        if (breakPoint2 > footerWidth) {
+        if (footerWidth > breakPoint1) {
+            $buttons.find('span:first-child').show();
+            $('.footer-items').show();
+            closeMobileMenu();
+            mobileButton.hide();
+        } else if (footerWidth > breakPoint2) {
+            $buttons.find('span:first-child').hide();
+            $('.footer-items').show();
+            closeMobileMenu();
+            mobileButton.hide();
+        } else {
             $buttons.find('span:first-child').hide();
             $('.footer-items').hide();
             mobileButton.show();
-        } else {
-            if (footerWidth > breakPoint1) {
-                $buttons.find('span:first-child').show();
-                $('.footer-items').show();
-                closeMobileMenu();
-                mobileButton.hide();
-            } else if (footerWidth > breakPoint2) {
-                $buttons.find('span:first-child').hide();
-                $('.footer-items').show();
-                closeMobileMenu();
-                mobileButton.hide();
-            } else {
-                $buttons.find('span:first-child').hide();
-                $('.footer-items').hide();
-                mobileButton.show();
-            }
         }
     }
 

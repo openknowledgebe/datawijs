@@ -15,7 +15,7 @@ body {
 }
 
 #logo {
-	background-image:url(img/splashscreen.svg); /* SPLASHSCREEN_LOGO */
+	background-image:url(img/splashscreen.png); /* SPLASHSCREEN_LOGO */
 }
 
 .loader-stroke-color-empty {

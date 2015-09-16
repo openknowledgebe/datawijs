@@ -29,7 +29,7 @@
         },
 
         get controls() {
-            return !!this._data.player || this.syncMaster || klynt.utils.browser.iOS;
+            return !!this._data.player || klynt.utils.browser.iOS;
         },
 
         get loop() {

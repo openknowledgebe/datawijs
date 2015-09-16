@@ -3,6 +3,60 @@
 /*  For more informations, you can check our support center @ http://support.klynt.net or our GITHUB @ https://github.com/Klynt/Klynt-Player/wiki/CSSArchitecture. */
 
 @font-face {
+	font-family: Stardos Stencil;
+	font-weight: normal;
+	font-style: normal;
+	src: url('fonts/StardosStencil-Regular.eot');
+	src: url('fonts/StardosStencil-Regular.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/StardosStencil-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Quicksand;
+	font-weight: bold;
+	font-style: normal;
+	src: url('fonts/Quicksand-Bold.eot');
+	src: url('fonts/Quicksand-Bold.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/Quicksand-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Economica;
+	font-weight: normal;
+	font-style: italic;
+	src: url('fonts/Economica-Italic.eot');
+	src: url('fonts/Economica-Italic.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/Economica-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Open Sans Semibold;
+	font-weight: normal;
+	font-style: normal;
+	src: url('fonts/OpenSans-Semibold.eot');
+	src: url('fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/OpenSans-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Open Sans;
+	font-weight: normal;
+	font-style: normal;
+	src: url('fonts/OpenSans-Regular.eot');
+	src: url('fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Open Sans;
+	font-weight: normal;
+	font-style: italic;
+	src: url('fonts/OpenSans-Italic.eot');
+	src: url('fonts/OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/OpenSans-Italic.ttf') format('truetype');
+}
+
+@font-face {
 	font-family: Arvo;
 	font-weight: bold;
 	font-style: normal;
@@ -12,12 +66,48 @@
 }
 
 @font-face {
+	font-family: Open Sans;
+	font-weight: bold;
+	font-style: normal;
+	src: url('fonts/OpenSans-Bold.eot');
+	src: url('fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
 	font-family: Arvo;
 	font-weight: normal;
 	font-style: italic;
 	src: url('fonts/Arvo-Italic.eot');
 	src: url('fonts/Arvo-Italic.eot?#iefix') format('embedded-opentype'),
 	     url('fonts/Arvo-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Droid Sans;
+	font-weight: bold;
+	font-style: normal;
+	src: url('fonts/DroidSans-Bold.eot');
+	src: url('fonts/DroidSans-Bold.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/DroidSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Quicksand;
+	font-weight: light;
+	font-style: normal;
+	src: url('fonts/Quicksand-Light.eot');
+	src: url('fonts/Quicksand-Light.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/Quicksand-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Economica;
+	font-weight: normal;
+	font-style: normal;
+	src: url('fonts/Economica-Regular.eot');
+	src: url('fonts/Economica-Regular.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/Economica-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -31,101 +121,11 @@
 
 @font-face {
 	font-family: Droid Sans;
-	font-weight: bold;
-	font-style: normal;
-	src: url('fonts/DroidSans-Bold.eot');
-	src: url('fonts/DroidSans-Bold.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/DroidSans-Bold.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: Droid Sans;
 	font-weight: normal;
 	font-style: normal;
 	src: url('fonts/DroidSans.eot');
 	src: url('fonts/DroidSans.eot?#iefix') format('embedded-opentype'),
 	     url('fonts/DroidSans.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: Economica;
-	font-weight: bold;
-	font-style: normal;
-	src: url('fonts/Economica-Bold.eot');
-	src: url('fonts/Economica-Bold.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/Economica-Bold.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: Economica;
-	font-weight: normal;
-	font-style: italic;
-	src: url('fonts/Economica-Italic.eot');
-	src: url('fonts/Economica-Italic.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/Economica-Italic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: Economica;
-	font-weight: normal;
-	font-style: normal;
-	src: url('fonts/Economica-Regular.eot');
-	src: url('fonts/Economica-Regular.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/Economica-Regular.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: Open Sans;
-	font-weight: bold;
-	font-style: normal;
-	src: url('fonts/OpenSans-Bold.eot');
-	src: url('fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/OpenSans-Bold.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: Open Sans;
-	font-weight: normal;
-	font-style: italic;
-	src: url('fonts/OpenSans-Italic.eot');
-	src: url('fonts/OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/OpenSans-Italic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: Open Sans;
-	font-weight: normal;
-	font-style: normal;
-	src: url('fonts/OpenSans-Regular.eot');
-	src: url('fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/OpenSans-Regular.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: Open Sans Semibold;
-	font-weight: normal;
-	font-style: normal;
-	src: url('fonts/OpenSans-Semibold.eot');
-	src: url('fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/OpenSans-Semibold.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: Quicksand;
-	font-weight: bold;
-	font-style: normal;
-	src: url('fonts/Quicksand-Bold.eot');
-	src: url('fonts/Quicksand-Bold.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/Quicksand-Bold.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: Quicksand;
-	font-weight: light;
-	font-style: normal;
-	src: url('fonts/Quicksand-Light.eot');
-	src: url('fonts/Quicksand-Light.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/Quicksand-Light.ttf') format('truetype');
 }
 
 @font-face {
@@ -138,6 +138,15 @@
 }
 
 @font-face {
+	font-family: Economica;
+	font-weight: bold;
+	font-style: normal;
+	src: url('fonts/Economica-Bold.eot');
+	src: url('fonts/Economica-Bold.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/Economica-Bold.ttf') format('truetype');
+}
+
+@font-face {
 	font-family: Stardos Stencil;
 	font-weight: bold;
 	font-style: normal;
@@ -147,21 +156,39 @@
 }
 
 @font-face {
-	font-family: Stardos Stencil;
+	font-family: Lato;
 	font-weight: normal;
 	font-style: normal;
-	src: url('fonts/StardosStencil-Regular.eot');
-	src: url('fonts/StardosStencil-Regular.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/StardosStencil-Regular.ttf') format('truetype');
+	src: url('fonts/Lato-Regular.eot');
+	src: url('fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/Lato-Regular.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: Abril Fatface;
+	font-family: Lato;
+	font-weight: normal;
+	font-style: italic;
+	src: url('fonts/Lato-Italic.eot');
+	src: url('fonts/Lato-Italic.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/Lato-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Simonetta;
+	font-weight: normal;
+	font-style: italic;
+	src: url('fonts/Simonetta-Italic.eot');
+	src: url('fonts/Simonetta-Italic.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/Simonetta-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Dancing Script;
 	font-weight: normal;
 	font-style: normal;
-	src: url('fonts/AbrilFatface-Regular.eot');
-	src: url('fonts/AbrilFatface-Regular.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/AbrilFatface-Regular.ttf') format('truetype');
+	src: url('fonts/DancingScript-Regular.eot');
+	src: url('fonts/DancingScript-Regular.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/DancingScript-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -171,6 +198,42 @@
 	src: url('fonts/CrimsonText-Bold.eot');
 	src: url('fonts/CrimsonText-Bold.eot?#iefix') format('embedded-opentype'),
 	     url('fonts/CrimsonText-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Dancing Script;
+	font-weight: bold;
+	font-style: normal;
+	src: url('fonts/DancingScript-Bold.eot');
+	src: url('fonts/DancingScript-Bold.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/DancingScript-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Simonetta;
+	font-weight: normal;
+	font-style: normal;
+	src: url('fonts/Simonetta-Regular.eot');
+	src: url('fonts/Simonetta-Regular.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/Simonetta-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Simonetta;
+	font-weight: black;
+	font-style: normal;
+	src: url('fonts/Simonetta-Black.eot');
+	src: url('fonts/Simonetta-Black.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/Simonetta-Black.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Abril Fatface;
+	font-weight: normal;
+	font-style: normal;
+	src: url('fonts/AbrilFatface-Regular.eot');
+	src: url('fonts/AbrilFatface-Regular.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/AbrilFatface-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -201,60 +264,6 @@
 }
 
 @font-face {
-	font-family: Lato;
-	font-weight: normal;
-	font-style: italic;
-	src: url('fonts/Lato-Italic.eot');
-	src: url('fonts/Lato-Italic.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/Lato-Italic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: Lato;
-	font-weight: normal;
-	font-style: normal;
-	src: url('fonts/Lato-Regular.eot');
-	src: url('fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/Lato-Regular.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: Simonetta;
-	font-weight: black;
-	font-style: normal;
-	src: url('fonts/Simonetta-Black.eot');
-	src: url('fonts/Simonetta-Black.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/Simonetta-Black.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: Simonetta;
-	font-weight: normal;
-	font-style: italic;
-	src: url('fonts/Simonetta-Italic.eot');
-	src: url('fonts/Simonetta-Italic.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/Simonetta-Italic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: Simonetta;
-	font-weight: normal;
-	font-style: normal;
-	src: url('fonts/Simonetta-Regular.eot');
-	src: url('fonts/Simonetta-Regular.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/Simonetta-Regular.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: Lobster Two;
-	font-weight: bold;
-	font-style: normal;
-	src: url('fonts/LobsterTwo-Bold.eot');
-	src: url('fonts/LobsterTwo-Bold.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/LobsterTwo-Bold.ttf') format('truetype');
-}
-
-@font-face {
 	font-family: Lobster Two;
 	font-weight: normal;
 	font-style: italic;
@@ -270,5 +279,14 @@
 	src: url('fonts/LobsterTwo-Regular.eot');
 	src: url('fonts/LobsterTwo-Regular.eot?#iefix') format('embedded-opentype'),
 	     url('fonts/LobsterTwo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Lobster Two;
+	font-weight: bold;
+	font-style: normal;
+	src: url('fonts/LobsterTwo-Bold.eot');
+	src: url('fonts/LobsterTwo-Bold.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/LobsterTwo-Bold.ttf') format('truetype');
 }
 
