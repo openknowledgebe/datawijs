@@ -1,13 +1,13 @@
 klynt.miniPlayerData = {
     "title": "Datawijs V2",
-    "url": "www.datawijs.be",
-    "thumbnail": "Medias/Posters/Introfilmpje_Datawijs_V1.jpg",
+    "analyticsKey": "",
+    "redirectToMobileApp": false,
+    "thumbnail": "Medias/Thumbnails/IntroAchtergrond.png.png",
     "description": "Interactieve Video Voor Open Data",
+    "resumePlaybackWording": "Resume playback?",
+    "url": "www.datawijs.be",
     "fullscreenInfoWording": "This program will launch in fullscreen",
     "yesWording": "Yes",
-    "analyticsKey": "",
     "thanksForWatchingWording": "Thanks for watching!",
-    "noWording": "No",
-    "redirectToMobileApp": false,
-    "resumePlaybackWording": "Resume playback?"
+    "noWording": "No"
 }
