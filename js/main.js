@@ -21,4 +21,12 @@ $(function() {
 			return $(this).attr('src').replace('.svg', '.png');
 		});
 	}
+
+    $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: false,
+        cssEase: 'linear'
+    });
 });

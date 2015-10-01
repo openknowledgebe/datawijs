@@ -2,11 +2,11 @@
   "name": "oSoC15",
   "version": "0.0.1",
   "authors": [
-    "SanderMeert",
+    "Sander Meert",
     "Lara De Raes",
     "Brecht Van De Vyvere"
   ],
-  "description": "Website for oSoC15",
+  "description": "Website for Datawijs",
   "main": "app.js",
   "keywords": [
     "html5",
@@ -14,7 +14,7 @@
     "JavaScript"
   ],
   "license": "MIT",
-  "homepage": "http://2015.summerofcode.be/",
+  "homepage": "http://www.datawijs.be/",
   "private": true,
   "ignore": [
     "**/.*",
@@ -27,8 +27,9 @@
     "fontawesome": "~4.3.0"
   },
   "dependencies": {
-    "modernizr": "~2.8.3",
+    "fontawesome": "~4.3.0",
     "jquery": "~2.1.3",
-    "fontawesome": "~4.3.0"
+    "modernizr": "~2.8.3",
+    "slick-carousel": "~1.5.8"
   }
 }
