@@ -132,13 +132,18 @@ a {
     width: 100%;
     color: #fff; }
   .press p {
-    margin: 0.2em 0 0.4em 0; }
+    margin: 0.2em 0 1em 0; }
   .press hr {
-    margin-top: 3em;
+    margin-top: 0;
     border-top: none;
     border-bottom: 1px solid #65CCEC; }
   .press h3 {
     margin: 0; }
+  .press #meer-weten {
+    margin-top: 0.5em;
+    color: #65CCEC;
+    font-weight: bold;
+    font-size: 1.5em; }
 
 .oSoc-logo img {
   width: 60px;
