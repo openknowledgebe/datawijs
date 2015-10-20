@@ -21,4 +21,19 @@ $(function() {
 			return $(this).attr('src').replace('.svg', '.png');
 		});
 	}
+
+    /* Initiate slider for press page */
+    $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: false,
+        cssEase: 'linear'
+    });
+
+    /* Define slide-down for extra info on press page */
+    $('#meer-weten').on('click', function() {
+        $(this).next('div').slideToggle(400);
+        $(this).find('i').toggleClass('fa-rotate-90');
+    });
 });

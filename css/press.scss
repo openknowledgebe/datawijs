@@ -1,0 +1,386 @@
+// Variables
+
+$osoc-green: #229387;
+$osoc-hue: #FFF;
+
+// new colors
+
+$color-green: #7FB924;
+$color-red: #EE3A24;
+$color-blue: #65CCEC;
+$color-dark-grey: #2D2D2D;
+$color-light-grey: lighten($color-dark-grey, 30%);
+$color-super-light-grey: lighten($color-dark-grey, 50%);
+
+$color-white: #FFF;
+
+/* =============================
+* CLEARFIX
+* ============================== */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+/* =============================
+* STYLES
+* ============================== */
+
+html{
+  font-family: 'Open Sans', sans-serif;
+  background-color: $color-dark-grey;
+}
+
+body{
+  overflow-x:hidden;
+}
+
+a{
+  color: $color-blue;
+}
+
+// Fluid container
+.container {
+  padding: 0 1em;
+  margin: 0 5%;
+}
+
+// Header
+.header {
+  background: $color-red;
+}
+
+// Responsive columns
+.newspaper {
+  h3 {
+    margin-top: 0;
+    color: #EE3A24;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .newspaper {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 4em;
+    -moz-column-gap: 4em;
+    column-gap: 4em;
+    -webkit-column-rule: 1px solid #EE3A24;
+    -moz-column-rule: 1px solid #EE3A24;
+    column-rule: 1px solid #EE3A24;
+    &>div {
+      -webkit-column-break-inside: avoid;
+      break-inside: avoid-column;
+    }
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .newspaper {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+
+    .container {
+        margin: 0 15%;
+    }
+}
+
+.feeds {
+    p {
+        line-height: 1.5em;
+
+        i {
+            color: $color-dark-grey;
+        }
+
+        a {
+            color: $color-light-grey;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                color: $color-blue;
+            }
+        }
+    }
+
+    text-align: center;
+
+    .contact {
+        margin: auto;
+
+        width: 250px;
+
+        p {
+            text-align: left;
+        }
+    }
+}
+
+// Responsive columns
+@media screen and (min-width: 768px) {
+    .feeds {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 4em;
+        -moz-column-gap: 4em;
+        column-gap: 4em;
+
+        &>div {
+            -webkit-column-break-inside: avoid;
+            break-inside: avoid-column;
+        }
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .feeds {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+// Grid for partner logos
+.grid {
+  padding: 0;
+  margin: 0 -1em;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &>li{
+    width: 300px;
+    max-width: 100%;
+  }
+}
+/* =============================
+* CONTENT SPECIFIC STYLES
+* ============================== */
+
+.logo {
+  display: inline-block;
+  margin-left: -1em;
+  background: #000;
+  width: 100px;
+  height: 100px;
+  a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: $color-red url(../images/logo-datawijs.png);
+    background-size: cover;
+    font-size: 0;
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
+
+.press {
+  margin: 1em 0;
+  padding: 1em 0;
+
+    img {
+        width: 100%;
+        color: #fff;
+    }
+
+    p {
+        margin: 0.2em 0 1em 0;
+    }
+
+    hr {
+        margin-top: 0;
+        border-top: none;
+        border-bottom: 1px solid $color-blue;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    #meer-weten {
+        margin-top: 0.5em;
+        color: $color-blue;
+        font-weight: bold;
+        font-size: 1.5em;
+
+        &:hover {
+            cursor: pointer;
+            cursor: hand;
+        }
+    }
+}
+
+.oSoc-logo img{
+    width: 60px;
+    height: 60px;
+}
+
+.part-nomargin {
+  margin-left: 0;
+}
+
+.page{
+  background-color: $color-white;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2{
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 600;
+    margin: 0.2em 0;
+}
+
+h2{
+  font-size: 2.5em;
+  color: $color-blue;
+}
+
+h3{
+    font-size: 1.17em;
+    color: $color-red;
+}
+
+.wh{
+  color: $color-white;
+}
+
+.nav{
+  min-height: 100px;
+  color: #fff;
+
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-height: 100px;
+    align-items:center;
+    align-content:center;
+    justify-content:flex-end;
+    display: flex;
+    flex-wrap:wrap;
+    li{
+      text-transform: uppercase;
+      display: inline-block;
+      a{
+        display: block;
+        text-decoration: none;
+        color: $color-white;
+        line-height: 20px;
+        padding:15px 20px;
+      }
+      a:hover{
+        background: rgba(0,0,0,.1);
+      }
+    }
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+.contact-desc{
+  font-size: 1.3em;
+  line-height: 1.4em;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.footer{
+  background-color: $color-red;
+  padding-bottom: 1em;
+  text-align: center;
+  p{
+    font-size: 0.9em;
+    padding-top: 5px;
+    color: $color-white;
+  }
+  a{
+    color: #fff;
+  }
+}
+
+/* =============================
+* MEDIA QUERIES
+* ============================== */
+
+.al-r{
+  text-align: right;
+}
+
+a{
+  p{
+	color: $color-white;
+	border-color: $color-white;
+  }
+}
+
+/* ======================
+* SLIDES PLUGIN CSS
+* ======================= */
+
+#slides .slidesNext,#slides .slidesPrevious {
+    position:absolute;
+    top:50%;
+    left:-40px;
+    width:24px;
+    height:0;
+    margin-top:-32px;
+    padding-top:32px;
+    display:block;
+    z-index:101;
+    overflow:hidden;
+    background:url(../images/press/slider/navigation-previous.png) no-repeat 0 0;
+}
+
+#slides .slidesNext {
+    left:798px;
+    background:url(../images/press/slider/navigation-next.png) no-repeat 0 0;
+}
+
+/*
+	Pagination
+*/
+
+.slidesPagination {
+    margin:10px 0 0;
+    float:right;
+}
+
+.slidesPagination li {
+    float:left;
+    margin:0 1px;
+    list-style:none;
+}
+
+.slidesPagination li a {
+    display:block;
+    width:14px;
+    height:0;
+    padding-top:14px;
+    background-image:url(../images/press/slider/pagination.png);
+    background-position:0 0;
+    overflow:hidden;
+}
+
+.slidesPagination li.slidesCurrent a {
+    background-position:0 -14px;
+}

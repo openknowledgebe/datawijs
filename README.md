@@ -15,7 +15,7 @@ Run following command:
 
 > bower update
 
-This should install the jQuery, Modernizr and FontAwesome packages
+This should install the jQuery, Modernizr, FontAwesome and Slick Carousel packages
 
 Everything should now be into place to upload the site.
 
