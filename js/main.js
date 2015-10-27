@@ -23,13 +23,18 @@ $(function() {
 	}
 
     /* Initiate slider for press page */
-    $('.slider').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: false,
-        cssEase: 'linear'
-    });
+
+	if($('.slider').length > 0) {
+		$('.slider').slick({
+        		dots: true,
+        		infinite: true,
+        		speed: 500,
+        		fade: false,
+        		cssEase: 'linear'
+	    	});
+
+	}
+
 
     /* Define slide-down for extra info on press page */
     $('#meer-weten').on('click', function() {
